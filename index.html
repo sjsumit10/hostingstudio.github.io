@@ -1,155 +1,89 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-		<title>Awesome</title>
-		
-		<!-- css -->
-		
-		<!--  google fonts  -->
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/animate.css">
-		<link rel="stylesheet" type="text/css" href="css/custom.css">
-
-	</head>
-	<body onload="countdown(year,month,day,hour,minute)">
-		<div class="body-wrapper">
-
-			<!--   begin of header section   -->
-			<section class="header" id="overlay-1">
-				<div class="header-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 text-center">
-								<div class="theme-name">
-									<a href="#" class="title">Hosting Studio</a>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 text-center">
-								<div class="header-text">
-									<p class="service-text">our awesome products and services are</p>
-									<p class="coming">coming soon</p>
-								</div>
-							</div>
-						</div>
-
-						<!--  begin of counter  -->
-
-						<div class="row">
-							<div class="col-md-12">
-								<div class="numbers" id="count2"></div>
-							</div>
-							<div class="col-md-12 counter1 text-center" id="spacer1">
-								<div class="col-md-4 col-xs-3 col-sm-4 day numbers" id="dday"></div>
-								<div class="col-md-2 col-xs-3 col-sm-2 hr numbers" id="dhour"></div>
-								<div class="col-md-2 col-xs-3 col-sm-2 min numbers" id="dmin"></div>
-								<div class="col-md-4 col-xs-3 col-sm-4 sec numbers" id="dsec"></div>
-							</div>
-							<div class="col-md-12 counter2 text-center" id="spacer2">
-								<div class="col-md-4 col-xs-3 col-sm-4 day title" id="days">day</div>
-								<div class="col-md-2 col-xs-3 col-sm-2 hr title" id="hours">hr</div>
-								<div class="col-md-2 col-xs-3 col-sm-2 min title" id="minutes">min</div>
-								<div class="col-md-4 col-xs-3 col-sm-4 sec title" id="seconds">sec</div>
-							</div>
-						</div>
-						<!--  end of counter -->
-					</div> <!--  end of .container  -->
-				</div><!-- end of .header-wrapper  -->
-			</section>
-			<!--   end of header section     -->
-
-			<!--   begin of newsletter section  -->
-			<section class="newsletter text-center">
-				<div class="newsletter-wrapper">
-					<div class="container">
-						<div class="row">
-							<h2 class="newsletter-text">subscribe and stay tuned with us</h2>
-							<div class="col-md-8 col-md-offset-2">
-								<form>
-	  								<div class="form-group">
-	    								<div class="input-group">
-	      									<div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
-	      									<input type="text" class="form-control" placeholder="Enter Your Email Here...">
-	    								</div>
-	    								<button class="subsribe-btn">Subscribe Now</button>
-	  								</div>
-								</form>
-								<p class="spam">
-									<i class="fa fa-bookmark"></i>We'll never spam you.
-								</p>
-							</div>
-						</div>
-					</div><!--  end of .container  -->
-				</div> <!--  end of .newssletter-wrapper  -->
-			</section>
-			<!--   end of newsletter section  -->
-
-			<!--   begin of social-media section  -->
-<!-- 			<section class="social-media text-center">
-				<div class="social-media-wrapper">
-					<div class="container">
-						<div class="row">
-							<h2 class="social-media-text">get updates from social media</h2>
-							<div class="col-md-8 col-md-offset-2">
-								<div class="social-links">
-									<a target="_blank" href="#" title="Facebook">
-										<i class="fa fa-facebook"></i>
-									</a>
-									<a target="_blank" href="#" title="Twitter">
-										<i class="fa fa-twitter"></i>
-									</a>
-									<a target="_blank" href="#" title="Google+">
-										<i class="fa fa-google-plus"></i>
-									</a>
-									<a target="_blank" href="#" title="Pinterest">
-										<i class="fa fa-pinterest"></i>
-									</a>
-									<a target="_blank" href="" title="Instagram">
-										<i class="fa fa-instagram"></i>
-									</a>
-								</div>
-							</div>
-							<div class="clear-fix"></div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-			<!--   end of social-media section   -->
-
-			<!--   begin of footer  section  -->
-			<section class="footer">
-				<div class="footer-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<p class="copy-right text-center">&copy; 2023 Hosting Studio. All rights reserved.</p>
-							</div>
-<!-- 							<div class="col-md-6">
-								<p class="develop text-center">Developed by <a href="http://themewagon.com">ThemeWagon <sup>TM</sup></a></p>
-							</div> -->
-						</div>
-					</div>
-				</div><!--  end of .footer-wrapper  -->
-			</section>
-			<!--   end of footer section  -->
-		</div>
-		
-		<!--  js files -->
-
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/timer.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-	
-	</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Hosting Studio</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Hosting Studio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <!-- <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Where Imagination Meets Functionality</h1>
+                    <h2 class="masthead-subheading mb-0">Your Vision Our Expertise.</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+        <!-- Content section 1-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/01.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Offerings</h2>
+                            <p>We offer App development | Web development | Hosting services | Cloud consulting services, all under one hood</p>
+                            <p>One stop for all your development needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Contact Us</h2>
+                            <p>We are Pune, IN based startup. We are available over email in IST hours.</p>
+                            <p>Reach out us at - hello@hostingstudio.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; HOSTING STUDIO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
